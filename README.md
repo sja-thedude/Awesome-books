@@ -49,8 +49,8 @@ npx eslint .
 ## Authors
 
 👤 **Tinyefuza Gordon**
-- GitHub: [@githubhandle](https://github.com/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@githubhandle](https://github.com/1GORDON)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tinyefuza-gordon-935747213/)
 
 👤 **Syeda Juveria Afreen**
 
