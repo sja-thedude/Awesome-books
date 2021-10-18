@@ -53,7 +53,7 @@ document
     bookItems.push({
       id,
       title,
-      author
+      author,
     });
     saveToLocalStorage('bookItems', bookItems);
     displayBooks();
