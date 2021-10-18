@@ -1,29 +1,16 @@
-const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
-const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
-
-function codeForSingleBook(book) {
-  return `<div>${book.title}</div>
-            <div>${book.author}</div>
-            <button class='remove' data-id='${book.id}'>Remove</button>
-            <hr>`;
-}
+/* eslint-disable */
 
 function displayBooks() {
-  let bookItems = getFromLocalStorage('bookItems');
+  const bookItems = Bclasses.getAllBooks();
 
-  if (bookItems == null) {
-    bookItems = [];
-  }
-
-  const booksCode = bookItems.map((book) => codeForSingleBook(book));
+  const booksCode = bookItems.map((book) => new Bclasses(book.title, book.author, book.id).getCode());
   document.getElementById('bitems').innerHTML = booksCode.join('');
 
   const removeButtons = Array.from(document.querySelectorAll('.remove'));
   removeButtons.forEach((removeButton) => {
     removeButton.addEventListener('click', (event) => {
       const id = event.target.getAttribute('data-id');
-      bookItems = bookItems.filter((b) => b.id !== Number(id));
-      saveToLocalStorage('bookItems', bookItems);
+      Bclasses.remove(id);
       displayBooks();
     });
   });
@@ -37,24 +24,14 @@ document
   .getElementById('bookslist')
   .addEventListener('submit', (event) => {
     event.preventDefault();
-    let bookItems = getFromLocalStorage('bookItems');
-    if (bookItems == null) {
-      bookItems = [];
-    }
     const title = titleInput.value.trim();
     const author = authorInput.value.trim();
-    let id = 1;
-    if (bookItems.length > 0) {
-      id = bookItems[bookItems.length - 1].id + 1;
-    }
+
     if (!title || !author) {
       return;
     }
-    bookItems.push({
-      id,
-      title,
-      author,
-    });
-    saveToLocalStorage('bookItems', bookItems);
+
+    const book = new Bclasses(title, author);
+    Bclasses.add(book);
     displayBooks();
   });
