@@ -24,7 +24,6 @@ document
   .getElementById('bookslist')
   .addEventListener('submit', (event) => {
     event.preventDefault();
-    const bookItems = Bclasses.getAllBooks();
     const title = titleInput.value.trim();
     const author = authorInput.value.trim();
 
