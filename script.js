@@ -1,4 +1,3 @@
-
 function displayBooks() {
   const bookItems = Book.getAllBooks();
 
@@ -14,6 +13,11 @@ function displayBooks() {
     });
   });
 }
+
+displayBooks();
+
+const titleInput = document.getElementById('title');
+const authorInput = document.getElementById('author');
 document
   .getElementById('bookslist')
   .addEventListener('submit', (event) => {
