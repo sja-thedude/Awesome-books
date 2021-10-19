@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
@@ -105,7 +107,7 @@ contactElement.addEventListener('click', () => {
 });
 
 window.addEventListener('load', () => {
-  var DateTime = luxon.DateTime;
+  const { DateTime } = luxon;
   this.today = DateTime.now();
   document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);
 });
