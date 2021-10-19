@@ -6,8 +6,72 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("background.jpg");
+  background-image: url("bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.h1 {
+  background-color: #fff;
+  width: 22%;
+  margin-left: 35%;
+  padding-left: 1%;
+  border-radius: 15px;
+}
+
+.contable {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  margin-top: 20px;
+  width: 100%
+}
+
+#btitle {
+  width: 20%;
+  text-align: center;
+}
+
+#bauthor {
+  width: 20%;
+  text-align: center;
+}
+
+#btn {
+  background-color: #ff0;
+  width: 10%;
+}
+
+.alltext {
+  margin: 5%;
+  margin-left: 35%;
+}
+
+input {
+  margin-left: 10%;
+}
+
+.heading {
+  background-color: #fff;
+  width: 35%;
+  margin-right: 10%;
+  padding-left: 1.5%;
+  border-radius: 10px;
+}
+
+button {
+  margin-left: 15%;
+}
+
+table tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  color: white;
 }
