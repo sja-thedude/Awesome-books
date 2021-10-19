@@ -156,3 +156,38 @@ li a {
 .form {
   display: none;
 }
+
+.contactsection {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  background-color: #000;
+}
+
+.hide-contact {
+  display: none;
+}
+
+.hide-form {
+  display: none;
+}
+
+.hide-list {
+  display: none;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 20px 20px;
+  padding: 0 10px;
+}
