@@ -1,7 +1,7 @@
 const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
 const getFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
-class Bclasses {
+class Book {
   constructor(title, author, id = undefined) {
     this.title = title;
     this.author = author;

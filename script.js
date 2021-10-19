@@ -1,29 +1,24 @@
 /* eslint-disable */
 
 function displayBooks() {
-  const bookItems = Bclasses.getAllBooks();
+  const bookItems = Book.getAllBooks();
 
-  const booksCode = bookItems.map((book) => new Bclasses(book.title, book.author, book.id).getCode());
+  const booksCode = bookItems.map((book) => new Book(book.title, book.author, book.id).getCode());
   document.getElementById('bitems').innerHTML = booksCode.join('');
 
   const removeButtons = Array.from(document.querySelectorAll('.remove'));
   removeButtons.forEach((removeButton) => {
     removeButton.addEventListener('click', (event) => {
       const id = event.target.getAttribute('data-id');
-      Bclasses.remove(id);
+      Book.remove(id);
       displayBooks();
     });
   });
-}
 
-displayBooks();
-
-const titleInput = document.getElementById('btitle');
-const authorInput = document.getElementById('bauthor');
-document
   .getElementById('bookslist')
   .addEventListener('submit', (event) => {
     event.preventDefault();
+    const bookItems = Book.getAllBooks();
     const title = titleInput.value.trim();
     const author = authorInput.value.trim();
 
@@ -32,6 +27,6 @@ document
     }
 
     const book = new Bclasses(title, author);
-    Bclasses.add(book);
+    Book.add(book);
     displayBooks();
   });
