@@ -15,6 +15,7 @@ function displayBooks() {
     });
   });
 
+document
   .getElementById('bookslist')
   .addEventListener('submit', (event) => {
     event.preventDefault();
@@ -26,7 +27,7 @@ function displayBooks() {
       return;
     }
 
-    const book = new Bclasses(title, author);
+    const book = new Book(title, author);
     Book.add(book);
     displayBooks();
   });
