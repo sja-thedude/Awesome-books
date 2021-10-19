@@ -14,7 +14,7 @@ function displayBooks() {
       displayBooks();
     });
   });
-
+}
 document
   .getElementById('bookslist')
   .addEventListener('submit', (event) => {
