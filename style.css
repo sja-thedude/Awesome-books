@@ -167,6 +167,18 @@ li a {
   background-color: #000;
 }
 
+.contactul {
+  padding: 10px;
+}
+
+.contactsection p {
+  padding: 10px;
+}
+
+.contactsection li {
+  padding: 2px;
+}
+
 .hide-contact {
   display: none;
 }
