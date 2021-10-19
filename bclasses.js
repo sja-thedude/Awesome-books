@@ -13,10 +13,10 @@ class Bclasses {
   }
 
   getCode() {
-    return `<div>${this.title}</div>
-              <div>${this.author}</div>
-              <button class='remove' data-id='${this.id}'>Remove</button>
-              <hr>`;
+    return ` <tr>
+              <td>${this.title} by ${this.author}</td>
+              <td><button class='remove' data-id='${this.id}'>Remove</td>
+              </tr>`;
   }
 
   static add(book) {
