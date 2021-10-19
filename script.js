@@ -79,33 +79,33 @@ document
     displayBooks();
   });
 
-  const listElement = document.getElementById('list');
-  const formElement = document.getElementById('newbook');
-  const contactElement = document.getElementById('contact');
-  const listBody = document.querySelector('.header');
-  const formBody = document.querySelector('.form');
-  const contactBody = document.querySelector('.contactsection');
+const listElement = document.getElementById('list');
+const formElement = document.getElementById('newbook');
+const contactElement = document.getElementById('contact');
+const listBody = document.querySelector('.header');
+const formBody = document.querySelector('.form');
+const contactBody = document.querySelector('.contactsection');
 
-  listElement.addEventListener('click', (event) => {
-    listBody.style.display = 'block';
-    formBody.style.display = 'none';
-    contactBody.style.display = 'none';
-  });
+listElement.addEventListener('click', () => {
+  listBody.style.display = 'block';
+  formBody.style.display = 'none';
+  contactBody.style.display = 'none';
+});
 
-  formElement.addEventListener('click', (event) => {
-    formBody.style.display = 'block';
-    listBody.style.display = 'none';
-    contactBody.style.display = 'none';
-  });
+formElement.addEventListener('click', () => {
+  formBody.style.display = 'block';
+  listBody.style.display = 'none';
+  contactBody.style.display = 'none';
+});
 
-  contactElement.addEventListener('click', (event) => {
-    contactBody.style.display = 'flex';
-    listBody.style.display = 'none';
-    formBody.style.display = 'none';
-  });
+contactElement.addEventListener('click', () => {
+  contactBody.style.display = 'flex';
+  listBody.style.display = 'none';
+  formBody.style.display = 'none';
+});
 
-  window.addEventListener('load', () => {
-    const { DateTime } = luxon;
-    this.today = DateTime.now();
-    document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);
-  });
+window.addEventListener('load', () => {
+  const { DateTime } = luxon;
+  this.today = DateTime.now();
+  document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);
+});
