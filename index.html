@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
     <title>Awesome Books</title>
-</head>
-<body>
-    <h1>Awesome Books</h1>
-    <div id ="bitems">
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="h1">Awesome Books</h1>
+    </div>
+    <div class="conbooks">
+      <table class="contable" id="bitems"></table>
+    </div>
+    <div class="hr">
+      <hr />
     </div>
 
-    <form id="bookslist">
-
-      <input type="text" name="title" placeholder="title" id="btitle">
-      <br>
-      <input type="text" name="author" placeholder="author" id="bauthor">
-      <br>
-      <button type="submit" id="btn">Add</button>
-
+    <form class="form" id="bookslist">
+      <div class="alltext">
+        <h1 class="heading">Add a new book</h1>
+        <input type="text" name="title" placeholder="title" id="btitle" />
+        <br />
+        <input type="text" name="author" placeholder="author" id="bauthor" />
+        <br />
+        <button type="submit" id="btn">Add</button>
+      </div>
     </form>
-    <script src="Bclasses.js"></script>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
