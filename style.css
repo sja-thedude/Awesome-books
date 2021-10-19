@@ -14,10 +14,10 @@ body {
 
 .h1 {
   background-color: #fff;
-  width: 22%;
-  margin-left: 35%;
+  width: 25%;
+  margin-left: 38%;
   padding-left: 1%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .contable {
@@ -30,7 +30,7 @@ body {
 
 .header {
   margin-top: 20px;
-  width: 100%
+  width: 100%;
 }
 
 #btitle {
@@ -74,4 +74,32 @@ table tr {
   justify-content: space-between;
   width: 100% !important;
   color: white;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(148, 147, 147, 0.5);
+}
+
+td {
+  padding: 2px;
+  margin-right: 25%;
+  width: 100%;
+}
+
+table td .remove {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 0;
+}
+
+hr {
+  width: 50%;
+}
+
+.hr {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
 }
