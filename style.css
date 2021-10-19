@@ -104,3 +104,55 @@ input {
   color: #fff;
   padding: 20px;
 }
+
+.conmain {
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  margin: 20px 20px;
+  padding: 0 10px;
+}
+
+nav .weblogo {
+  text-decoration: none;
+  color: black;
+}
+
+.ul {
+  display: flex;
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.conbooks {
+  display: block;
+}
+
+.form {
+  display: none;
+}
