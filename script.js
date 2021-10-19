@@ -105,7 +105,7 @@ contactElement.addEventListener('click', () => {
 });
 
 window.addEventListener('load', () => {
-  const { DateTime } = luxon;
+  const DateTime = luxon.DateTime;
   this.today = DateTime.now();
   document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);
 });
