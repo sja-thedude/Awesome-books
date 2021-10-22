@@ -1,5 +1,4 @@
-import Bclasses from 'bclasses.js';
-
+/* eslint-disable */
 function displayBooks() {
   const bookItems = Bclasses.getAllBooks();
 
